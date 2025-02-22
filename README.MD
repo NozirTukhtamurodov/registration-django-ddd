@@ -114,6 +114,3 @@ curl -X GET http://127.0.0.1:8000/api/country-codes/
 👨‍💻 **Nozir Tukhtamurodov** - [GitHub](https://github.com/NozirTukhtamurodov)
 
 ---
-
-🚀 **Now your project is fully documented!** Let me know if you need **Docker setup, authentication, or more API features!** 🚀
-
