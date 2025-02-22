@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Success{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h2 class="text-success">Thank You for Registering!</h2>
+    <p>We appreciate your interest. You will receive an email shortly with further details.</p>
+
+    <h4>Your Submitted Information:</h4>
+    <ul class="list-group">
+        <li class="list-group-item"><b>Name:</b> {{ user_data.first_name }} {{ user_data.last_name }}</li>
+        <li class="list-group-item"><b>Country:</b> {{ user_data.country }}</li>
+        <li class="list-group-item"><b>Phone:</b> {{ user_data.phone }}</li>
+        <li class="list-group-item"><b>Email:</b> {{ user_data.email }}</li>
+        <li class="list-group-item"><b>Experience:</b> {{ user_data.experience }}</li>
+    </ul>
+
+    <a href="/register/" class="btn btn-primary mt-3">Go Back</a>
+</div>
+{% endblock %}

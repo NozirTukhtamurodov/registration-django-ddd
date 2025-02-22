@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow-lg">
+            <div class="card-body">
+                <h3 class="text-center mb-4">Register</h3>
+                <form id="registerForm" method="POST">
+                    {% csrf_token %}
+
+                    <div class="mb-3">
+                        <label class="form-label">First Name</label>
+                        {{ form.first_name }}
+                        <small class="text-danger">{{ form.first_name.errors }}</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Last Name</label>
+                        {{ form.last_name }}
+                        <small class="text-danger">{{ form.last_name.errors }}</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Country</label>
+                        {{ form.country }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Phone</label>
+                        <input type="text" id="phoneField" name="phone" class="form-control" required>
+                        <small class="text-danger">{{ form.phone.errors }}</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        {{ form.email }}
+                        <small class="text-danger">{{ form.email.errors }}</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Experience Level</label>
+                        {{ form.experience }}
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        {{ form.accepted_terms }}
+                        <label class="form-check-label">
+                            I have read and accepted the <a href="#" class="text-red-500">Privacy Policy</a> and 
+                            <a href="#" class="text-red-500">Terms and Conditions</a>
+                        </label>
+                        <small class="text-danger">{{ form.accepted_terms.errors }}</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100">Join Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
