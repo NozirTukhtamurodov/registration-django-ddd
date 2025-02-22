@@ -64,12 +64,7 @@ venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 ```
 
-### **4️⃣ Apply Migrations**
-```sh
-python manage.py migrate
-```
-
-### **5️⃣ Run Development Server**
+### **4 Run Development Server**
 ```sh
 python manage.py runserver
 ```
@@ -80,7 +75,7 @@ python manage.py runserver
 ## **📌 Running Tests**
 ### **Run Django Tests**
 ```sh
-python manage.py test
+pytest core/tests or pytest
 ```
 
 ### **Test API Endpoints (Country Code API)**
