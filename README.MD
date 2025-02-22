@@ -48,7 +48,7 @@ hfm_registration/
 ## **📌 Installation**
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/yourusername/hfm_registration.git
+git clone https://github.com/NozirTukhtamurodov/registration-django-ddd
 cd hfm_registration
 ```
 
@@ -115,13 +115,8 @@ curl -X GET http://127.0.0.1:8000/api/country-codes/
 
 ---
 
-## **📌 License**
-This project is **open-source** under the **MIT License**.
-
----
-
 ## **📌 Author**
-👨‍💻 **Your Name** - [GitHub](https://github.com/yourusername)
+👨‍💻 **Nozir Tukhtamurodov** - [GitHub](https://github.com/NozirTukhtamurodov)
 
 ---
 
